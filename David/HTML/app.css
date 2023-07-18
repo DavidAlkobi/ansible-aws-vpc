@@ -1,0 +1,33 @@
+.myTitle {
+    color: rgb(207, 14, 17);
+    font-family: sans-serif;
+    background: yellow;
+}
+button{
+    width: 200px;
+    height: 38px;
+    border-radius: 12px;
+    border: 0;
+    background: rgb(112, 112, 241);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 600ms;
+
+}
+button:hover {
+    background: rgb(142, 142, 190);
+    font-size: 30px;
+}
+button:focus {
+    background: green;
+}
+input{
+    width: 300px;
+    height: 32px;
+    outline: none;
+    font-size: 24px;
+    border-radius: 6px;
+    padding: 6px;
+
+}
