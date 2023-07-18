@@ -11,6 +11,6 @@
         region: "{{region}}"
         dns_support: yes
         dns_hostnames: yes
-        tenancy: yes
+        tenancy: defult
         state: "{{state}}"
       register: vpcout
