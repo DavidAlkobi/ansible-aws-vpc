@@ -154,7 +154,7 @@
         - pubRT_out.route_table.id
         - NATGW_out.nat_gateway_id
         - privRT_out.route_table.id
-        - 
+        
 
 
 
