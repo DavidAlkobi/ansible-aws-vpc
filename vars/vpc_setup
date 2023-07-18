@@ -22,4 +22,4 @@ zone4: us-east-1d
 zone5: us-east-1e
 zone6: us-east-1f
 
-state:present
+state: present
