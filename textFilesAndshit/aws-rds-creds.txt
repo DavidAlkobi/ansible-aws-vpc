@@ -1,6 +1,0 @@
-admin
-
-GHDN4VQInp1WOuifMZgW
-
-
-vprofile-cicid-mysql.c6jnhcegtcua.us-east-1.rds.amazonaws.com
