@@ -11,19 +11,6 @@
     - name: Import VPC setup Variable
       include_vars: vars/output_vars
 
-    - name: Create vprofile ec2 key
-      ec2_key:
-        name: vprofile-key
-        region: "{{region}}"
-      register: key_out
-
-    - name: Save private key into file bastion-key.pem
-      copy: 
-        content: "{{key_out.key.private_key}}"
-        dest: "./bastion-key.pem"
-        mode: 0600
-      when: key_out.changed
-
     - name: Create sec Grp for bastion host
       ec2_group:
         name: Bastion-host-sg
