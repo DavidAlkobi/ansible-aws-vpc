@@ -23,6 +23,7 @@ zone5: us-east-1e
 zone6: us-east-1f
 
 state: present
+
 # Bastion vars
 bastion_ami: ami-04823729c75214919
 MYIP: 5.28.186.229/32
