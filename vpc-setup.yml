@@ -166,11 +166,11 @@
         igwid: "{{igw_out.gateway_id}}"
         pubRTid: "{{PubRT_out.route_table.id}}"
         NATGWid: "{{NATGW_out.nat_gateway_id}}"
-        privRTid: "{{privRT_out.route_table.id}}"
+        privRTid: "{{PrivRT_out.route_table.id}}"
         casheable: yes
 
     - name: Create variables file for vpc output
       copy:
-        content: "vpcid: {{vpcout.vpc.id}}\npubsub1id: {{pubsub1_out.subnet.id}}\npubsub2id: {{pubsub2_out.subnet.id}}\npubsub3id: {{pubsub3_out.subnet.id}}\nprivsub1id: {{privsub1_out.subnet.id}}\nprivsub2id: {{privsub2_out.subnet.id}}\nprivsub3id: {{privsub3_out.subnet.id}}\nigwid: {{igw_out.gateway_id}}\npubRTid: {{PubRT_out.route_table.id}}\nNATGWid: {{NATGW_out.nat_gateway_id}}\nprivRTid: {{privRT_out.route_table.id}}"
+        content: "vpcid: {{vpcout.vpc.id}}\npubsub1id: {{pubsub1_out.subnet.id}}\npubsub2id: {{pubsub2_out.subnet.id}}\npubsub3id: {{pubsub3_out.subnet.id}}\nprivsub1id: {{privsub1_out.subnet.id}}\nprivsub2id: {{privsub2_out.subnet.id}}\nprivsub3id: {{privsub3_out.subnet.id}}\nigwid: {{igw_out.gateway_id}}\npubRTid: {{PubRT_out.route_table.id}}\nNATGWid: {{NATGW_out.nat_gateway_id}}\nprivRTid: {{PrivRT_out.route_table.id}}"
         dest: vars/output_vars
 
