@@ -1,5 +1,4 @@
 ---
-- name: Setup Vprofile Stack
 - hosts: localhost
   connection: local
   gather_facts: False
