@@ -15,7 +15,7 @@
       ec2_key:
         name: vprofile-key
         region: "{{ region }}"
-      register: vprofile-key_out
+      register: vprofile_key_out
 
     - name: Create sec Grp for bastion host
       ec2_group:
