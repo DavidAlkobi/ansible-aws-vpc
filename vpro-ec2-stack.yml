@@ -33,7 +33,7 @@
             from_port: 80
             to_port: 80
             cidr_ip: 0.0.0.0/0
-      register: vproELBSG-out
+      register: vproELBSG_out
 
     - name: Create Security Group for Vprofile Stack
       ec2_group:
