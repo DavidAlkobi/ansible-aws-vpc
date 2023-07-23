@@ -11,6 +11,12 @@
     - name: Import VPC setup Variable
       include_vars: vars/output_vars
 
+    - name: Create bastion host ec2 key
+      ec2_key:
+        name: vprofile-key
+        region: "{{ region }}"
+      register: vprofile-key_out
+
     - name: Create sec Grp for bastion host
       ec2_group:
         name: Bastion-host-sg
